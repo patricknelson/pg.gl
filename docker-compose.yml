@@ -5,7 +5,7 @@ services:
   web:
     build: .
     ports:
-     - "8080:8080"
+     - "8080:80"
     environment:
      - MONGODB_URI=mongodb://mongo:27017/test 
     links:
@@ -15,4 +15,3 @@ services:
     volumes:
      - .:/starter
      - /starter/node_modules
-     
